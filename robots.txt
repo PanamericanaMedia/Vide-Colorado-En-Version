@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /project.html
+Disallow: /project-detail.html
+Disallow: /team.html
+Disallow: /testimonial.html
+Disallow: /blog.html
+Disallow: /single-post.html
+
+Sitemap: https://www.videocolorado.com/sitemap.xml
