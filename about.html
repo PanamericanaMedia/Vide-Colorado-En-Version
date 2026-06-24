@@ -1,818 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Video Colorado</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-video-colorado-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon-video-colorado-180.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Video Colorado</title>
+<link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="./assets/css/responsive.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-video-colorado-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon-video-colorado-180.png">
+<style>
+  /* Client logo display in partner swiper */
+  .partner-logo {
+    max-height: 48px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(100%) brightness(0) invert(1);
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+  }
+  .partner-logo:hover {
+    opacity: 1;
+  }
+  /* Fallback text shown while logo files are missing.
+     Once all files are in ./assets/images/clients/, change display to none */
+  .partner-name-fallback {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin-top: 0.25rem;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="navbar-container">
-            <div class="hero-container">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="navbar-nav-container">
-                
-                    <!-- Logo Container -->
-                    <div class="logo-container">
-                        <a class="navbar-brand fw-bold vc-wordmark" href="./index.html">
-                            Video<span class="vc-wordmark-accent">Colorado</span>
-                        </a>
-                    </div>
-                
-                    <!-- Nav Link Container -->
-                    <div class="nav-link-container">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mx-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./about.html">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./services.html">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./pricing.html">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contact.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-            
-                    <button class="nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                
-                    <!-- Navbar Social Container -->
-                    <div class="navbar-cta-container">
-                        <div>
-                            <a href="./contact.html" class="btn btn-accent">Get a Quote</a>
-                        </div>
-                    </div>
-                
-                    </div>
-                </nav>
+<!-- Header Section -->
+<header>
+  <div class="navbar-container">
+    <div class="hero-container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="navbar-nav-container">
+          <!-- Logo Container -->
+          <div class="logo-container">
+            <a class="navbar-brand fw-bold vc-wordmark" href="./index.html">
+              Video<span class="vc-wordmark-accent">Colorado</span>
+            </a>
+          </div>
+          <!-- Nav Link Container -->
+          <div class="nav-link-container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pricing.html">How We Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <button class="nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!-- Navbar CTA -->
+          <div class="navbar-cta-container">
+            <div>
+              <a href="./contact.html" class="btn btn-accent">Get a Quote</a>
+            </div>
+          </div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </div>
+</header>
 
-    <!-- Sidebar Section -->
-    <aside>
-        <div class="sidebar-overlay"></div>
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <div class="logo vc-wordmark">
-                    Video<span class="vc-wordmark-accent">Colorado</span>
-                </div>
-                <button class="close-btn"><span>X</span></button>
+<!-- Sidebar Section -->
+<aside>
+  <div class="sidebar-overlay"></div>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo vc-wordmark">
+        Video<span class="vc-wordmark-accent">Colorado</span>
+      </div>
+      <button class="close-btn"><span>X</span></button>
+    </div>
+    <ul class="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./pricing.html">How We Work</a></li>
+      <li class="below-dropdown"><a href="./contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</aside>
+
+<!-- Main Section -->
+<main>
+
+  <!-- Banner Inner Section -->
+  <section class="section banner-inner about-banner">
+    <div class="banner-overlay"></div>
+    <div class="hero-container">
+      <div class="banner-inner-container">
+        <h2>About Us</h2>
+        <nav class="breadcrumb">
+          <a href="./index.html" class="breadcrumb-item">Home</a>
+          <span class="separator">/</span>
+          <span class="breadcrumb-item current">About Us</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="hero-container">
+      <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
+        <div class="col col-md-4">
+          <div class="d-flex flex-row flex-md-column gspace-2 align-items-end align-items-md-start justify-content-between w-100 h-100">
+            <span class="about-tagline">
+              Storytelling That Builds Trust, Not Just Attention
+            </span>
+            <div class="about-circle-logo-container">
+              <div class="about__circle-logo">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="circleLogoTitle">
+                  <title id="circleLogoTitle">Video Colorado Logo</title>
+                  <defs>
+                    <path id="textcircle" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0" />
+                  </defs>
+                  <circle cx="100" cy="100" r="95"></circle>
+                  <text dy="5">
+                    <textPath xlink:href="#textcircle" class="about__circle-logo-title" startOffset="0%">
+                      • VIDEO COLORADO • STRATEGIC VIDEO PRODUCTION • STORYTELLING THAT BUILDS TRUST
+                    </textPath>
+                  </text>
+                  <g transform="translate(100 100)">
+                    <image
+                      href="./assets/images/Gp-1.png"
+                      class="about__circle-logo-image"
+                      width="160"
+                      height="160"
+                      x="-80"
+                      y="-80"
+                      preserveAspectRatio="xMidYMid meet"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
-            <ul class="menu">
+          </div>
+        </div>
+        <div class="col col-md-8">
+          <div class="d-flex flex-column gspace-2">
+            <h3>
+              Video Colorado is a Colorado-based video production and strategic storytelling studio.
+              We believe strategy-first communication consistently outperforms generic content &mdash; and that belief shapes every project we take on.
+            </h3>
+            <p>
+              We&rsquo;ve built our track record working across sectors that demand both institutional credibility and real community trust: government agencies, nonprofits, advocacy organizations, and businesses across Colorado.
+              From concept and strategy through final delivery, we work as a long-term communications partner, not a one-off vendor.
+              Video Colorado is the video production brand of <a href="https://www.panamericana.media" target="_blank" rel="noopener" class="accent-link">Panamericana Media LLC</a>, a Colorado communications company operating since 2021.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievement Section -->
+  <!-- NOTE: "Operating Since" displays as static 2021 — do not add class="counter" here -->
+  <section class="section pt-0">
+    <div class="hero-container">
+      <div class="achievement-container">
+        <div class="achievement-content">
+          <div class="achievement-stat-container">
+            <span class="achievement-stat">2021</span>
+            <span class="achievement-suffix"></span>
+          </div>
+          <h5>Operating Since</h5>
+        </div>
+        <div class="achievement-content">
+          <div class="achievement-stat-container">
+            <span class="achievement-stat counter" data-target="20">00</span>
+            <span class="achievement-suffix">+</span>
+          </div>
+          <h5>Colorado Organizations Served</h5>
+        </div>
+        <div class="achievement-content">
+          <div class="achievement-stat-container">
+            <span class="achievement-stat counter" data-target="10">00</span>
+            <span class="achievement-suffix">+</span>
+          </div>
+          <h5>Government &amp; Community Partners</h5>
+        </div>
+        <div class="achievement-content">
+          <div class="achievement-stat-container">
+            <span class="achievement-stat counter" data-target="5">00</span>
+            <span class="achievement-suffix">+</span>
+          </div>
+          <h5>Sectors Served</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Trust Us Section -->
+  <section class="section bg-accent-color-5">
+    <div class="hero-container">
+      <div class="d-flex flex-column gspace-3">
+        <div class="row row-cols-lg-2 row-cols-1 grid-spacer-3">
+          <div class="col col-lg-8 order-2 order-lg-1">
+            <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
+              <div class="col">
+                <div class="card card-trust-us">
+                  <div class="card-number-wrapper">
+                    <div class="card-number">01</div>
+                  </div>
+                  <div class="trust-us-icon">
+                    <img src="./assets/images/Icon-5-1.png" alt="Trust Us Icon" class="img-fluid">
+                  </div>
+                  <div class="d-flex flex-column gspace-2">
+                    <h4>Strategy Before Cameras</h4>
+                    <p>We build the message and the plan first, so every shoot serves a clear communications goal.</p>
+                    <div class="trust-us-cta">
+                      <a href="./services.html">See Our Services</a>
+                      <i class="fa-solid fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-trust-us">
+                  <div class="card-number-wrapper">
+                    <div class="card-number">02</div>
+                  </div>
+                  <div class="trust-us-icon">
+                    <img src="./assets/images/Icon-6-1.png" alt="Trust Us Icon" class="img-fluid">
+                  </div>
+                  <div class="d-flex flex-column gspace-2">
+                    <h4>Colorado Sector Experience</h4>
+                    <p>Years working with state agencies, nonprofits, and community organizations means we understand how approval processes, public accountability, and audience trust actually work.</p>
+                    <div class="trust-us-cta">
+                      <a href="./contact.html">Work With Us</a>
+                      <i class="fa-solid fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 order-1 order-lg-2">
+            <div class="d-flex flex-column gspace-2 text-start text-lg-center align-items-start align-items-lg-center">
+              <h2>Why Colorado Organizations Trust Video Colorado</h2>
+              <p class="mb-0">From state agencies to grassroots nonprofits, we help Colorado organizations turn complex stories into content people actually trust.</p>
+              <div>
+                <a href="./contact.html" class="btn btn-accent">Let's Create Together</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-2 row-cols-1 grid-spacer-3">
+          <div class="col col-lg-4 order-2 order-lg-1">
+            <div class="d-flex flex-column gspace-2 justify-content-end overflow-hidden h-100">
+              <span class="trust-us-stat-container">
+                <span class="trust-us-stat counter" data-target="5">0</span>
+                <span class="trust-us-suffix">+</span>
+              </span>
+              <h3>Years Building Colorado Stories</h3>
+              <p>Serving government, nonprofit, and community partners across Colorado since 2021.</p>
+              <div class="trustus-avatar-container">
+                <div class="d-flex flex-row align-items-center">
+                  <img src="./assets/images/dummy-img-400x400.jpg" alt="Banner Avatar" class="banner-avatar">
+                  <img src="./assets/images/dummy-img-400x400.jpg" alt="Banner Avatar" class="banner-avatar">
+                  <img src="./assets/images/dummy-img-400x400.jpg" alt="Banner Avatar" class="banner-avatar">
+                  <img src="./assets/images/Gp-1.png" alt="Banner Avatar" class="banner-avatar">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-8 order-1 order-lg-2">
+            <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
+              <div class="col">
+                <div class="card card-trust-us">
+                  <div class="card-number-wrapper">
+                    <div class="card-number">03</div>
+                  </div>
+                  <div class="trust-us-icon">
+                    <img src="./assets/images/Icon-7-1.png" alt="Trust Us Icon" class="img-fluid">
+                  </div>
+                  <div class="d-flex flex-column gspace-2">
+                    <h4>One Partner, Full Process</h4>
+                    <p>Strategy, scripting, filming, editing, and distribution &mdash; all under one roof, one point of contact.</p>
+                    <div class="trust-us-cta">
+                      <a href="./pricing.html">How We Work</a>
+                      <i class="fa-solid fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-trust-us">
+                  <div class="card-number-wrapper">
+                    <div class="card-number">04</div>
+                  </div>
+                  <div class="trust-us-icon">
+                    <img src="./assets/images/Icon-8.png" alt="Trust Us Icon" class="img-fluid">
+                  </div>
+                  <div class="d-flex flex-column gspace-2">
+                    <h4>Built on Community Trust</h4>
+                    <p>Whether you&rsquo;re a state agency or a neighborhood nonprofit, we adapt our approach to fit your audience.</p>
+                    <div class="trust-us-cta">
+                      <a href="./contact.html">Start a Conversation</a>
+                      <i class="fa-solid fa-chevron-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section (staged — uncomment when team photos/names are ready) -->
+  <!--
+  <section class="section">
+    <div class="hero-container overflow-visible">
+      ...
+    </div>
+  </section>
+  -->
+
+  <!-- Partner / Client Logos Section -->
+  <section class="section p-0">
+    <div class="hero-container overflow-hidden">
+      <div class="partners-container">
+        <h5 class="partnership-title-content">
+          Selected Clients &amp; Collaborations
+        </h5>
+        <div class="overflow-hidden">
+          <div class="swiper swiperpartner">
+            <!-- Logo files go in ./assets/images/clients/
+                 Filenames: cdot.png, denver-doti.png, city-of-aurora.png,
+                 denver-mayors-office.png, brothers-redevelopment.png,
+                 scholars-unlimited.png, latino-leadership-institute.png,
+                 jefferson-center.png
+                 Once all files are in place, remove the partner-name-fallback spans. -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/cdot.png" alt="Colorado Department of Transportation" class="partner-logo">
+                <span class="partner-name partner-name-fallback">Colorado Dept. of Transportation</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/denver-doti.png" alt="Denver Department of Transportation & Infrastructure" class="partner-logo">
+                <span class="partner-name partner-name-fallback">Denver DOTI</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/city-of-aurora.png" alt="City of Aurora" class="partner-logo">
+                <span class="partner-name partner-name-fallback">City of Aurora</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/denver-mayors-office.png" alt="Denver Mayor's Office" class="partner-logo">
+                <span class="partner-name partner-name-fallback">Denver Mayor's Office</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/brothers-redevelopment.png" alt="Brothers Redevelopment Inc." class="partner-logo">
+                <span class="partner-name partner-name-fallback">Brothers Redevelopment Inc.</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/scholars-unlimited.png" alt="Scholars Unlimited" class="partner-logo">
+                <span class="partner-name partner-name-fallback">Scholars Unlimited</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/latino-leadership-institute.png" alt="Latino Leadership Institute" class="partner-logo">
+                <span class="partner-name partner-name-fallback">Latino Leadership Institute</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/clients/jefferson-center.png" alt="Jefferson Center for Mental Health" class="partner-logo">
+                <span class="partner-name partner-name-fallback">Jefferson Center for Mental Health</span>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panamericana Media Bridge Section -->
+  <section class="section-small pm-bridge-section">
+    <div class="hero-container">
+      <div class="pm-bridge-container">
+        <div class="pm-bridge-content">
+          <div class="pm-bridge-text">
+            <span class="pm-bridge-eyebrow">Part of the Panamericana Media family</span>
+            <h4 class="pm-bridge-heading">Need Spanish-language or bilingual content?</h4>
+            <p class="pm-bridge-body">Video Colorado is the video production brand of Panamericana Media LLC. When a project calls for English-and-Spanish communications or community-specific outreach, Panamericana Media handles it as a specialist &mdash; strategy-first, culturally resonant, and built for the communities you serve.</p>
+          </div>
+          <div class="pm-bridge-cta">
+            <a href="https://www.panamericana.media" target="_blank" rel="noopener" class="btn btn-pm-bridge">
+              Visit Panamericana Media
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="section">
+    <div class="hero-container">
+      <div class="contact-cta-banner">
+        <div class="contact-cta-title-container">
+          <h2 class="contact-cta-title heading-fill">
+            Let's Turn Your Story Into Something Colorado Trusts
+          </h2>
+          <h2 class="contact-cta-title heading-stroke">
+            Let's Turn Your Story Into Something Colorado Trusts
+          </h2>
+        </div>
+        <div class="contact-cta-text-container">
+          <p>
+            From strategy through final delivery, we help Colorado organizations communicate with clarity, credibility, and cultural fluency. Let's build something that lasts.
+          </p>
+          <div>
+            <a href="./contact.html" class="btn btn-accent-primary">
+              Free Consultation
+            </a>
+          </div>
+        </div>
+        <div class="contact-cta-image">
+          <img src="./assets/images/dummy-img-600x800.jpg" alt="Contact CTA" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer Section -->
+<footer>
+  <div class="section-footer">
+    <div class="hero-container">
+      <div class="footer-container">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 grid-spacer-3">
+
+          <div class="col col-lg-3 col-md-6">
+            <div class="d-flex flex-column gspace-2">
+              <h3>Video Colorado</h3>
+              <div class="d-flex flex-column gspace-1">
+                <h5>Our Office</h5>
+                <div class="footer-info-container">
+                  <span class="footer-info">Denver, Colorado</span>
+                </div>
+                <div class="footer-info-container">
+                  <h5>Email</h5>
+                  <span class="footer-info">hello@videocolorado.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-3 col-md-6">
+            <div class="d-flex flex-column gspace-3">
+              <h4>Navigation</h4>
+              <ul class="chevron-circle-list">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
                 <li><a href="./services.html">Services</a></li>
-                <li><a href="./pricing.html">Pricing</a></li>
-                <li class="below-dropdown"><a href="./contact.html">Contact Us</a></li>
-            </ul>
+                <li><a href="./pricing.html">How We Work</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col col-lg-6 col-md-12">
+            <div class="footer-newsletter-container">
+              <h5 class="container-title">Subscribe to our newsletter for the latest updates</h5>
+              <div id="newsletter-success" class="alert success hidden">
+                <span class="check-icon"><i class="fa-solid fa-2xl fa-check"></i></span>
+                <p class="text-center">Thank you! Form submitted successfully.</p>
+              </div>
+              <div id="newsletter-error" class="alert error hidden">
+                <span class="cross-icon"><i class="fa-solid fa-2xl fa-xmark"></i></span>
+                <p class="text-center">Oops! Form submission failed. Please try again.</p>
+              </div>
+              <form id="newsletter-form" action="./assets/php/submit-newsletter.php" class="form" method="post">
+                <input type="email" id="newsletter" name="email" placeholder="hello@videocolorado.com">
+                <button type="submit" class="btn btn-accent-primary">Subscribe Now</button>
+              </form>
+              <div class="d-flex flex-row gspace-1 align-items-center w-100 justify-content-between flex-wrap">
+                <h5>Social Media</h5>
+                <div class="social-footer-container">
+                  <a href="https://www.instagram.com/" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.x.com/" class="footer-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://www.youtube.com/" class="footer-icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </aside>
 
-    <!-- Main Section -->
-    <main>
-        <!-- Banner Inner Section -->
-        <section class="section banner-inner about-banner">
-            <div class="banner-overlay"></div>
-            <div class="hero-container">
-                <div class="banner-inner-container">
-                    <h2>About Us</h2>
-                    <nav class="breadcrumb">
-                        <a href="./index.html" class="breadcrumb-item">Home</a>
-                        <span class="separator">/</span>
-                        <span class="breadcrumb-item current">About Us</span>
-                    </nav>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="section">
-            <div class="hero-container">
-                <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
-                    <div class="col col-md-4">
-                        <div class="d-flex flex-row flex-md-column gspace-2 align-items-end align-items-md-start justify-content-between w-100 h-100">
-                            <span class="about-tagline">
-                                Storytelling That Builds Trust, Not Just Attention
-                            </span>
-    
-                            <div class="about-circle-logo-container">
-                                <div class="about__circle-logo">
-                                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="circleLogoTitle">
-                                        <title id="circleLogoTitle">Video Colorado Logo</title>
-                                        <defs>
-                                            <path id="textcircle" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0" />
-                                        </defs>
-                            
-                                        <circle cx="100" cy="100" r="95"></circle>
-                            
-                                        <text dy="5">
-                                            <textPath xlink:href="#textcircle" class="about__circle-logo-title" startOffset="0%">
-                                                • VIDEO COLORADO • STRATEGIC VIDEO PRODUCTION • STORYTELLING THAT BUILDS TRUST
-                                            </textPath>
-                                        </text>
-                            
-                                        <g transform="translate(100 100)">
-                                            <image
-                                                href="./assets/images/Gp-1.png"
-                                                class="about__circle-logo-image"
-                                                width="160"
-                                                height="160"
-                                                x="-80"
-                                                y="-80"
-                                                preserveAspectRatio="xMidYMid meet"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-8">
-                        <div class="d-flex flex-column gspace-2">
-                            <h3>
-                                Video Colorado is a Colorado-based video production and strategic storytelling studio.
-                                We believe strategy-first communication consistently outperforms generic content &mdash; and that belief shapes every project we take on.
-                            </h3>
-                            <p>
-                                We&rsquo;ve built our track record working across sectors that demand both institutional credibility and real community trust: government agencies, nonprofits, advocacy organizations, and businesses across Colorado.
-                                From concept and strategy through final delivery, we work as a long-term communications partner, not a one-off vendor.
-                                Video Colorado is the video production brand of <a href="https://www.panamericana.media" target="_blank" rel="noopener" class="accent-link">Panamericana Media LLC</a>, a Colorado communications company operating since 2021.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievement Section -->
-        <section class="section pt-0">
-            <div class="hero-container">
-                <div class="achievement-container">
-                    <div class="achievement-content">
-                        <div class="achievement-stat-container">
-                            <span class="achievement-stat counter" data-target="2021">00</span>
-                            <span class="achievement-suffix"></span>
-                        </div>
-                        <h5>Operating Since</h5>
-                    </div>
-                    <div class="achievement-content">
-                        <div class="achievement-stat-container">
-                            <span class="achievement-stat counter" data-target="20">00</span>
-                            <span class="achievement-suffix">+</span>
-                        </div>
-                        <h5>Colorado Organizations Served</h5>
-                    </div>
-                    <div class="achievement-content">
-                        <div class="achievement-stat-container">
-                            <span class="achievement-stat counter" data-target="10">00</span>
-                            <span class="achievement-suffix">+</span>
-                        </div>
-                        <h5>Government &amp; Community Partners</h5>
-                    </div>
-                    <div class="achievement-content">
-                        <div class="achievement-stat-container">
-                            <span class="achievement-stat counter" data-target="5">00</span>
-                            <span class="achievement-suffix">+</span>
-                        </div>
-                        <h5>Sectors Served</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Trust Us Section -->
-        <section class="section bg-accent-color-5">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-3">
-                    <div class="row row-cols-lg-2 row-cols-1 grid-spacer-3">
-                        <div class="col col-lg-8 order-2 order-lg-1">
-                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
-                                <div class="col">
-                                    <div class="card card-trust-us">
-                                        <div class="card-number-wrapper">
-                                            <div class="card-number">01</div>
-                                        </div>
-                                        <div class="trust-us-icon">
-                                            <img src="./assets/images/Icon-5-1.png" alt="Trust Us Icon" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-column gspace-2">
-                                            <h4>Strategy Before Cameras</h4>
-                                            <p>We build the message and the plan first, so every shoot serves a clear communications goal.</p>
-                                            <div class="trust-us-cta">
-                                                <a href="./about.html">Learn More</a>
-                                                <i class="fa-solid fa-chevron-circle-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card card-trust-us">
-                                        <div class="card-number-wrapper">
-                                            <div class="card-number">02</div>
-                                        </div>
-                                        <div class="trust-us-icon">
-                                            <img src="./assets/images/Icon-6-1.png" alt="Trust Us Icon" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-column gspace-2">
-                                            <h4>Colorado Sector Experience</h4>
-                                            <p>Years working with state agencies, nonprofits, and community organizations means we understand how approval processes, public accountability, and audience trust actually work.</p>
-                                            <div class="trust-us-cta">
-                                                <a href="./about.html">Learn More</a>
-                                                <i class="fa-solid fa-chevron-circle-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-4 order-1 order-lg-2">
-                            <div class="d-flex flex-column gspace-2 text-start text-lg-center align-items-start align-items-lg-center">
-                                <h2>Why Colorado Organizations Trust Video Colorado</h2>
-                                <p class="mb-0">From state agencies to grassroots nonprofits, we help Colorado organizations turn complex stories into content people actually trust.</p>
-                                <div>
-                                    <a href="./contact.html" class="btn btn-accent">Let's Create Together</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row row-cols-lg-2 row-cols-1 grid-spacer-3">
-                        <div class="col col-lg-4 order-2 order-lg-1">
-                            <div class="d-flex flex-column gspace-2 justify-content-end overflow-hidden h-100">
-                                <span class="trust-us-stat-container">
-                                    <span class="trust-us-stat counter" data-target="5">0</span>
-                                    <span class="trust-us-suffix">+</span>
-                                </span>
-                                <h3>Years Building Colorado Stories</h3>
-                                <p>Serving government, nonprofit, and community partners across Colorado since 2021.</p>
-                                <div class="trustus-avatar-container">
-                                    <div class="d-flex flex-row align-items-center">
-                                        <img src="./assets/images/dummy-img-400x400.jpg" alt="Banner Avatar" class="banner-avatar">
-                                        <img src="./assets/images/dummy-img-400x400.jpg" alt="Banner Avatar" class="banner-avatar">
-                                        <img src="./assets/images/dummy-img-400x400.jpg" alt="Banner Avatar" class="banner-avatar">
-                                        <img src="./assets/images/Gp-1.png" alt="Banner Avatar" class="banner-avatar">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-8 order-1 order-lg-2">
-                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
-                                <div class="col">
-                                    <div class="card card-trust-us">
-                                        <div class="card-number-wrapper">
-                                            <div class="card-number">03</div>
-                                        </div>
-                                        <div class="trust-us-icon">
-                                            <img src="./assets/images/Icon-7-1.png" alt="Trust Us Icon" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-column gspace-2">
-                                            <h4>One Partner, Full Process</h4>
-                                            <p>Strategy, scripting, filming, editing, and distribution &mdash; all under one roof, one point of contact.</p>
-                                            <div class="trust-us-cta">
-                                                <a href="./about.html">Learn More</a>
-                                                <i class="fa-solid fa-chevron-circle-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card card-trust-us">
-                                        <div class="card-number-wrapper">
-                                            <div class="card-number">04</div>
-                                        </div>
-                                        <div class="trust-us-icon">
-                                            <img src="./assets/images/Icon-8.png" alt="Trust Us Icon" class="img-fluid">
-                                        </div>
-                                        <div class="d-flex flex-column gspace-2">
-                                            <h4>Built on Community Trust</h4>
-                                            <p>Whether you&rsquo;re a state agency or a neighborhood nonprofit, we adapt our approach to fit your audience.</p>
-                                            <div class="trust-us-cta">
-                                                <a href="./about.html">Learn More</a>
-                                                <i class="fa-solid fa-chevron-circle-right"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section -->
-        <!-- STAGED: only placeholder "Add Team Member" cards exist right now. Uncomment once real team
-             names/photos/roles are ready, and add Crew back to the main nav (currently in team.html, unlinked). -->
-        <!--
-        <section class="section">
-            <div class="hero-container overflow-visible">
-                <div class="row row-cols-lg-2 row-cols-1 grid-spacer-y-5 grid-spacer-x-3">
-                    <div class="col col-lg-4">
-                        <div class="team-title-container">
-                            <h2>Meet the Team Behind Video Colorado</h2>
-                            <p>Experienced filmmakers, strategists, and storytellers focused on video production that earns real trust across Colorado.</p>
-                            <div>
-                                <a href="./team.html" class="btn btn-accent">View All Team</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-lg-8">
-                        <div class="row row-cols-md-2 row-cols-1 grid-spacer-3">
-                            <div class="col">
-                                <div class="team-container">
-                                    <div class="image-container team-image">
-                                        <img src="./assets/images/dummy-img-600x600.jpg" alt="Team" class="img-fluid">
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-between gspace-2">
-                                        <div class="d-flex flex-column">
-                                            <h4>Add Team Member</h4>
-                                            <p class="team-designation">Creative Director</p>
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center gspace-1">
-                                            <a href="https://www.instagram.com/" class="social-icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                            <a href="https://www.facebook.com/" class="social-icon">
-                                                <i class="fa-brands fa-facebook"></i>
-                                            </a>
-                                            <a href="https://www.x.com/" class="social-icon">
-                                                <i class="fa-brands fa-x-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="team-container">
-                                    <div class="image-container team-image">
-                                        <img src="./assets/images/dummy-img-600x600.jpg" alt="Team" class="img-fluid">
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-between gspace-2">
-                                        <div class="d-flex flex-column">
-                                            <h4>Add Team Member</h4>
-                                            <p class="team-designation">Director of Photography</p>
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center gspace-1">
-                                            <a href="https://www.instagram.com/" class="social-icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                            <a href="https://www.facebook.com/" class="social-icon">
-                                                <i class="fa-brands fa-facebook"></i>
-                                            </a>
-                                            <a href="https://www.x.com/" class="social-icon">
-                                                <i class="fa-brands fa-x-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="team-container">
-                                    <div class="image-container team-image">
-                                        <img src="./assets/images/dummy-img-600x600.jpg" alt="Team" class="img-fluid">
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-between gspace-2">
-                                        <div class="d-flex flex-column">
-                                            <h4>Add Team Member</h4>
-                                            <p class="team-designation">Bilingual Content Strategist</p>
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center gspace-1">
-                                            <a href="https://www.instagram.com/" class="social-icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                            <a href="https://www.facebook.com/" class="social-icon">
-                                                <i class="fa-brands fa-facebook"></i>
-                                            </a>
-                                            <a href="https://www.x.com/" class="social-icon">
-                                                <i class="fa-brands fa-x-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="team-container">
-                                    <div class="image-container team-image">
-                                        <img src="./assets/images/dummy-img-600x600.jpg" alt="Team" class="img-fluid">
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center justify-content-between gspace-2">
-                                        <div class="d-flex flex-column">
-                                            <h4>Add Team Member</h4>
-                                            <p class="team-designation">Lead Video Editor</p>
-                                        </div>
-                                        <div class="d-flex flex-row align-items-center gspace-1">
-                                            <a href="https://www.instagram.com/" class="social-icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                            <a href="https://www.facebook.com/" class="social-icon">
-                                                <i class="fa-brands fa-facebook"></i>
-                                            </a>
-                                            <a href="https://www.x.com/" class="social-icon">
-                                                <i class="fa-brands fa-x-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-
-        <!-- Partner Section -->
-        <section class="section p-0">
-            <div class="hero-container overflow-hidden">
-                <div class="partners-container">
-                    <h5 class="partnership-title-content">
-                        Selected Clients &amp; Collaborations
-                    </h5>
-                    <div class="overflow-hidden">
-                        <div class="swiper swiperpartner">
-                            <!-- Text-based client list (no real client logos available yet — replace with logo images once cleared for use) -->
-                            <div class="swiper-wrapper">
-                            <div class="swiper-slide"><span class="partner-name">Colorado Dept. of Transportation</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Denver DOTI</span></div>
-                            <div class="swiper-slide"><span class="partner-name">City of Aurora</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Denver Mayor's Office</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Brothers Redevelopment Inc.</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Scholars Unlimited</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Latino Leadership Institute</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Jefferson Center for Mental Health</span></div>
-                        </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Panamericana Media Bridge Section -->
-        <section class="section-small pm-bridge-section">
-            <div class="hero-container">
-                <div class="pm-bridge-container">
-                    <div class="pm-bridge-content">
-                        <div class="pm-bridge-text">
-                            <span class="pm-bridge-eyebrow">Part of the Panamericana Media family</span>
-                            <h4 class="pm-bridge-heading">Need Spanish-language or bilingual content?</h4>
-                            <p class="pm-bridge-body">Video Colorado is the video production brand of Panamericana Media LLC. When a project calls for English-and-Spanish communications or community-specific outreach, Panamericana Media handles it as a specialist &mdash; strategy-first, culturally resonant, and built for the communities you serve.</p>
-                        </div>
-                        <div class="pm-bridge-cta">
-                            <a href="https://www.panamericana.media" target="_blank" rel="noopener" class="btn btn-pm-bridge">
-                                Visit Panamericana Media
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Service Section -->
-        <section class="section service-content-banner">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-5">
-                    <div class="service-title-wrapper">
-                        <div class="service-title-heading">
-                            <h2>What We Do Best</h2>
-                        </div>
-                    
-                        <div class="service-title-description">
-                            <p>
-                                From strategic storytelling to event coverage, see how we help Colorado organizations earn trust through video.
-                            </p>
-                        </div>
-                    
-                        <div class="service-title-cta">
-                            <a href="./services.html" class="btn btn-accent">Explore All Services</a>
-                        </div>
-                    </div>
-                      
-                    <div class="accordion" id="serviceAccordion">
-                        <div class="accordion-item service-acc-1">
-                            <h2 class="accordion-header service-accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service1">
-                                    Video Production
-                                </button>
-                            </h2>
-                            <div id="service1" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    <div class="service-content-container">
-                                        <!-- YouTube clip range: data-start / data-end use seconds. Example: start="5" end="12" → plays 00:05 to 00:12 in a loop. -->
-                                        <div class="service-video-bg" data-video-id="pVA0G01aDfk" id="service-video-1" data-start="4" data-end="20"></div>
-                                        <div class="service-video-content">
-                                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
-                                                <div class="col col-md-9">
-                                                    <div class="d-flex flex-column-reverse flex-lg-row gspace-2 justify-content-between w-100">
-                                                        <div class="service-description-content">
-                                                            <p class="mb-0">From concept and scripting to on-location filming, we handle every step of production for government agencies, nonprofits, and businesses across Colorado.</p>
-                                                        </div>
-                                                        <div class="service-tag-container">
-                                                            <span class="service-tag">video production</span>
-                                                            <span class="service-tag">on-location filming</span>
-                                                            <span class="service-tag">government &amp; nonprofit</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col col-md-3">
-                                                    <div class="d-flex flex-column align-items-end justify-content-center h-100">
-                                                        <a href="./contact.html" class="btn btn-accent">Get a Quote</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item service-acc-2">
-                            <h2 class="accordion-header service-accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service2">
-                                    Strategic Storytelling
-                                </button>
-                            </h2>
-                            <div id="service2" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    <div class="service-content-container">
-                                        <!-- YouTube clip range: data-start / data-end use seconds. Example: start="5" end="12" → plays 00:05 to 00:12 in a loop. -->
-                                        <div class="service-video-bg" data-video-id="pVA0G01aDfk" id="service-video-2" data-start="20" data-end="40"></div>
-                                        <div class="service-video-content">
-                                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
-                                                <div class="col col-md-9">
-                                                    <div class="d-flex flex-column-reverse flex-lg-row gspace-2 justify-content-between w-100">
-                                                        <div class="service-description-content">
-                                                            <p class="mb-0">We start with strategy: who you&rsquo;re trying to reach, what they need to hear, and how to say it so it lands. Every video serves a communications goal first.</p>
-                                                        </div>
-                                                        <div class="service-tag-container">
-                                                            <span class="service-tag">strategic storytelling</span>
-                                                            <span class="service-tag">messaging strategy</span>
-                                                            <span class="service-tag">narrative development</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col col-md-3">
-                                                    <div class="d-flex flex-column align-items-start align-items-md-end justify-content-center h-100">
-                                                        <a href="./contact.html" class="btn btn-accent">Get a Quote</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item service-acc-3">
-                            <h2 class="accordion-header service-accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service3">
-                                    Event Coverage
-                                </button>
-                            </h2>
-                            <div id="service3" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    <div class="service-content-container">
-                                        <!-- YouTube clip range: data-start / data-end use seconds. Example: start="5" end="12" → plays 00:05 to 00:12 in a loop. -->
-                                        <div class="service-video-bg" data-video-id="pVA0G01aDfk" id="service-video-3" data-start="40" data-end="60"></div>
-                                        <div class="service-video-content">
-                                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
-                                                <div class="col col-md-9">
-                                                    <div class="d-flex flex-column-reverse flex-lg-row gspace-2 justify-content-between w-100">
-                                                        <div class="service-description-content">
-                                                            <p class="mb-0">From press conferences to community celebrations, we capture the moments that matter and turn them into shareable, on-brand content fast.</p>
-                                                        </div>
-                                                        <div class="service-tag-container">
-                                                            <span class="service-tag">event coverage</span>
-                                                            <span class="service-tag">press events</span>
-                                                            <span class="service-tag">live documentation</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col col-md-3">
-                                                    <div class="d-flex flex-column align-items-start align-items-md-end justify-content-center h-100">
-                                                        <a href="./contact.html" class="btn btn-accent">Get a Quote</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item service-acc-4">
-                            <h2 class="accordion-header service-accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service4">
-                                    Branded Content &amp; Strategy
-                                </button>
-                            </h2>
-                            <div id="service4" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    <div class="service-content-container">
-                                        <!-- YouTube clip range: data-start / data-end use seconds. Example: start="5" end="12" → plays 00:05 to 00:12 in a loop. -->
-                                        <div class="service-video-bg" data-video-id="pVA0G01aDfk" id="service-video-4" data-start="60" data-end="80"></div>
-                                        <div class="service-video-content">
-                                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
-                                                <div class="col col-md-9">
-                                                    <div class="d-flex flex-column-reverse flex-lg-row gspace-2 justify-content-between w-100">
-                                                        <div class="service-description-content">
-                                                            <p class="mb-0">We help organizations build a communications strategy first, then produce branded content that supports it &mdash; not the other way around.</p>
-                                                        </div>
-                                                        <div class="service-tag-container">
-                                                            <span class="service-tag">branded content</span>
-                                                            <span class="service-tag">communications strategy</span>
-                                                            <span class="service-tag">campaign planning</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col col-md-3">
-                                                    <div class="d-flex flex-column align-items-start align-items-md-end justify-content-center h-100">
-                                                        <a href="./contact.html" class="btn btn-accent">Get a Quote</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item service-acc-5">
-                            <h2 class="accordion-header service-accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#service5">
-                                    Need Spanish-Language or Bilingual Content?
-                                </button>
-                            </h2>
-                            <div id="service5" class="accordion-collapse collapse" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    <div class="service-content-container">
-                                        <div class="service-video-bg" data-video-id="pVA0G01aDfk" id="service-video-5" data-start="80" data-end="100"></div>
-                                        <div class="service-video-content">
-                                            <div class="row row-cols-md-2 row-cols-1 grid-spacer-2">
-                                                <div class="col col-md-9">
-                                                    <div class="d-flex flex-column-reverse flex-lg-row gspace-2 justify-content-between w-100">
-                                                        <div class="service-description-content">
-                                                            <p class="mb-0">When your project calls for Spanish-language or English-and-Spanish content, we work with Panamericana Media &mdash; a bilingual and bicultural communications specialist &mdash; to handle it right. Built for cultural resonance, not just word-for-word translation.</p>
-                                                        </div>
-                                                        <div class="service-tag-container">
-                                                            <span class="service-tag">Spanish-language content</span>
-                                                            <span class="service-tag">bilingual video</span>
-                                                            <span class="service-tag">community outreach</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col col-md-3">
-                                                    <div class="d-flex flex-column align-items-start align-items-md-end justify-content-center h-100">
-                                                        <a href="https://www.panamericana.media" target="_blank" rel="noopener" class="btn btn-accent">Visit Panamericana Media</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact CTA Section -->
-        <section class="section">
-            <div class="hero-container">
-                <div class="contact-cta-banner">
-                    <div class="contact-cta-title-container">
-                        <h2 class="contact-cta-title heading-fill">
-                            Let's Turn Your Story Into Something Colorado Trusts
-                        </h2>
-                        <h2 class="contact-cta-title heading-stroke">
-                            Let's Turn Your Story Into Something Colorado Trusts
-                        </h2>
-                    </div>
-                    <div class="contact-cta-text-container">
-                        <p>
-                            From strategy through final delivery, we help Colorado organizations communicate with clarity, credibility, and cultural fluency. Let's build something that lasts.
-                        </p>
-                        <div>
-                            <a href="./contact.html" class="btn btn-accent-primary">
-                                Free Consultation
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact-cta-image">
-                        <img src="./assets/images/dummy-img-600x800.jpg" alt="Contact CTA" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="section-footer">
-            <div class="hero-container">
-                <div class="footer-container">
-                    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 grid-spacer-3">
-                        <div class="col col-lg-3 col-md-6">
-                            <div class="d-flex flex-column gspace-2">
-                                <h3>Video Colorado</h3>
-                                <div class="d-flex flex-column gspace-1">
-                                    <h5>Our Office</h5>
-                                    <div class="footer-info-container">
-                                        <span class="footer-info">Denver, Colorado</span>
-                                    </div>
-                                    <div class="footer-info-container">
-                                        <h5>Email</h5>
-                                        <span class="footer-info">hello@videocolorado.com</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-6">
-                            <div class="d-flex flex-column gspace-3">
-                                <h4>Navigation</h4>
-                                <ul class="chevron-circle-list">
-                                    <li><a href="./index.html">Home</a></li>
-                                    <li><a href="./about.html">About Us</a></li>
-                                    <li><a href="./services.html">Services</a></li>
-                                    <li><a href="./pricing.html">Pricing</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col col-lg-6 col-md-12">
-                            <div class="footer-newsletter-container">
-                                <h5 class="container-title">Subscribe to our newsletter for the latest updates</h5>
-                                <div id="newsletter-success" class="alert success hidden">
-                                    <span class="check-icon"><i class="fa-solid fa-2xl fa-check"></i></span>
-                                    <p class="text-center">Thank you! Form submitted successfully.</p>
-                                </div>
-                            
-                                <div id="newsletter-error" class="alert error hidden">
-                                    <span class="cross-icon"><i class="fa-solid fa-2xl fa-xmark"></i></span>
-                                    <p class="text-center">Oops! Form submission failed. Please try again.</p>
-                                </div>
-                                <form id="newsletter-form" action="./assets/php/submit-newsletter.php" class="form" method="post">
-                                    <input type="email" id="newsletter" name="email" placeholder="hello@videocolorado.com">
-                                    <button type="submit" class="btn btn-accent-primary">Subscribe Now</button>
-                                </form>
-            
-                                <div class="d-flex flex-row gspace-1 align-items-center w-100 justify-content-between flex-wrap">
-                                    <h5>Social Media</h5>
-                                    <div class="social-footer-container">
-                                        <a href="https://www.instagram.com/" class="footer-icon">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                        <a href="https://www.facebook.com/" class="footer-icon">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a>
-                                        <a href="https://www.x.com/" class="footer-icon">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                        <a href="https://www.youtube.com/" class="footer-icon">
-                                            <i class="fa-brands fa-youtube"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-title-container">
-                        <span class="footer-title">Video Colorado</span>
-                    </div>
-                    <div class="footer-copyright-container">
-                        <a href="#" class="legallink">Privacy Policy</a>
-                        <span class="copyright">© 2026 Video Colorado, a brand of Panamericana Media LLC. All rights reserved.</span>
-                        <a href="#" class="legallink">Terms & Conditions</a>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-title-container">
+          <span class="footer-title">Video Colorado</span>
         </div>
-    </footer>
 
-    <script src="./assets/js/vendor/jquery.min.js"></script>
-    <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper-script.js"></script>
-    <script src="./assets/js/submit-form.js"></script>
-    <script src="./assets/js/video_embedded.js"></script>
+        <div class="footer-copyright-container">
+          <a href="#" class="legallink">Privacy Policy</a>
+          <span class="copyright">© 2026 Video Colorado, a brand of Panamericana Media LLC. All rights reserved.</span>
+          <a href="#" class="legallink">Terms &amp; Conditions</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/vendor/jquery.min.js"></script>
+<script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/vendor/swiper-bundle.min.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/swiper-script.js"></script>
+<script src="./assets/js/submit-form.js"></script>
+<script src="./assets/js/video_embedded.js"></script>
+
 </body>
 </html>
