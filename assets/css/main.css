@@ -1130,7 +1130,12 @@ ul{
     position: absolute;
     inset: 0;
     background-color: transparent;
-    background-image: radial-gradient(at top left, #12121259 0%, var(--secondary) 100%);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0.15) 40%,
+        rgba(0, 0, 0, 0.55) 100%
+    );
     z-index: 1;
 }
 
@@ -2296,7 +2301,6 @@ ul{
 /* 28. Testimonial Styles */
 
 .testimonial-banner-container{
-.testimonial-banner-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -2305,6 +2309,7 @@ ul{
     overflow: hidden;
     z-index: 1;
     min-height: 350px;
+    padding-top: 120px;
     padding-bottom: 30px;
 }
 
@@ -2313,7 +2318,6 @@ ul{
     position: relative;
     overflow: hidden;
     z-index: 1;
-}
 }
 
 #testimonial-video-background {
