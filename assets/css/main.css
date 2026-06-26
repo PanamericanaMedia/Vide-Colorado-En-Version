@@ -2295,16 +2295,13 @@ ul{
 
 /* 28. Testimonial Styles */
 
-..testimonial-banner-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 380px;   /* antes 600 */
-    align-items: flex-end;
-    padding-bottom: 40px; /* antes 80 */
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+.testimonial-banner-container{
+    min-height: 350px;
+    padding-bottom: 30px;
+}
+
+.testimonial-card-container{
+    padding: 0 20px 80px;
 }
 
 #testimonial-video-background {
