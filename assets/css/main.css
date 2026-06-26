@@ -2299,9 +2299,9 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 380px;   /* antes 600 */
+    min-height: 500px;   /* antes 600 */
     align-items: flex-end;
-    padding-bottom: 40px; /* antes 80 */
+    padding-bottom: 400px; /* antes 80 */
     position: relative;
     overflow: hidden;
     z-index: 1;
