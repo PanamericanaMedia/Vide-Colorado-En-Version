@@ -1106,14 +1106,23 @@ ul{
 /* 14. Banner Styles */
 
 .banner-home-video{
+
     display: flex;
+
     flex-direction: row;
+
     align-items: flex-end;
-    min-height: 100vh;
-    padding: 120px 20px 0px 20px;
+
+    min-height: 760px;
+
+    padding: 100px 20px 0px 20px;
+
     position: relative;
+
     overflow: hidden;
+
     z-index: 2;
+
 }
 
 .banner-home-video::before{
