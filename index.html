@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-video-colorado-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon-video-colorado-180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon-video-colorado-180.png">
+    <style>
+      .partner-logo {
+        max-height: 48px;
+        width: auto;
+        max-width: 160px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        filter: grayscale(100%) brightness(0) invert(1);
+        opacity: 0.75;
+        transition: opacity 0.2s ease;
+      }
+      .partner-logo:hover { opacity: 1; }
+      .partner-name-fallback {
+        display: block;
+        font-size: 0.75rem;
+        opacity: 0.5;
+        margin-top: 0.25rem;
+        text-align: center;
+      }
+    </style>
+
+</head>
 </head>
 <body>
     <!-- Header Section -->
@@ -938,31 +962,54 @@
         -->
 
         <!-- Partner Section -->
-        <section class="section-small">
-            <div class="hero-container overflow-hidden">
-                <div class="partners-container">
-                    <h5 class="partnership-title-content">
-                        Selected Clients &amp; Collaborations
-                    </h5>
-                    <div class="overflow-hidden">
-                        <div class="swiper swiperpartner">
-                            <!-- Text-based client list (no real client logos available yet — replace with logo images once cleared for use) -->
-                            <div class="swiper-wrapper">
-                            <div class="swiper-slide"><span class="partner-name">Colorado Dept. of Transportation</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Denver DOTI</span></div>
-                            <div class="swiper-slide"><span class="partner-name">City of Aurora</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Denver Mayor's Office</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Brothers Redevelopment Inc.</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Scholars Unlimited</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Latino Leadership Institute</span></div>
-                            <div class="swiper-slide"><span class="partner-name">Jefferson Center for Mental Health</span></div>
-                        </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
+<section class="section p-0">
+  <div class="hero-container overflow-hidden">
+    <div class="partners-container">
+      <h5 class="partnership-title-content">
+        Selected Clients &amp; Collaborations
+      </h5>
+      <div class="overflow-hidden">
+        <div class="swiper swiperpartner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/cdot.png" alt="Colorado Department of Transportation" class="partner-logo">
+              <span class="partner-name partner-name-fallback">Colorado Dept. of Transportation</span>
             </div>
-        </section>
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/denver-doti.png" alt="Denver DOTI" class="partner-logo">
+              <span class="partner-name partner-name-fallback">Denver DOTI</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/city-of-aurora.png" alt="City of Aurora" class="partner-logo">
+              <span class="partner-name partner-name-fallback">City of Aurora</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/denver-mayors-office.png" alt="Denver Mayor's Office" class="partner-logo">
+              <span class="partner-name partner-name-fallback">Denver Mayor's Office</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/brothers-redevelopment.png" alt="Brothers Redevelopment Inc." class="partner-logo">
+              <span class="partner-name partner-name-fallback">Brothers Redevelopment Inc.</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/scholars-unlimited.png" alt="Scholars Unlimited" class="partner-logo">
+              <span class="partner-name partner-name-fallback">Scholars Unlimited</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/latino-leadership-institute.png" alt="Latino Leadership Institute" class="partner-logo">
+              <span class="partner-name partner-name-fallback">Latino Leadership Institute</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/clients/jefferson-center.png" alt="Jefferson Center for Mental Health" class="partner-logo">
+              <span class="partner-name partner-name-fallback">Jefferson Center for Mental Health</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
         <!-- Panamericana Media Bridge Section -->
